@@ -5,8 +5,7 @@
 }
 
 body {
-    background-color: #000000;
-    /* background: linear-gradient(to right, #d4d3dd, #efefbb); */
+    background-color: #ffffff;
     font-family: "Lato", sans-serif;
     display: flex;
     flex-direction: column;
@@ -65,8 +64,8 @@ body {
     align-items: center;
     width: 331px;
     height: 616px;
-    background: #c36bf7;
-    border-radius: 30px;
+    background: #000000;
+    border-radius: 20px;
     padding: 10px;
 }
 
@@ -75,7 +74,7 @@ body {
     width: 328px;
     height: 600px;
     background-color: rgb(255, 255, 255);
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .topWrapper {
