@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    /* background: linear-gradient(to right, #d4d3dd, #efefbb); */
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+h4 {
+    position: fixed;
+    right: 1px;
+    bottom: 1px;
+    color: rgb(240, 240, 240);
+    background-color: rgba(0, 0, 0, 0.692);
+    padding: 10px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: rgb(255, 255, 255);
+}
+
+a:active {
+    text-decoration: none !important;
+    color: rgb(197, 52, 52);
+}
+
+h1 {
+    letter-spacing: 3px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+html,
+body {
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+.mobile {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 331px;
+    height: 616px;
+    background: #c36bf7;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.phone-mirror {
+    position: relative;
+    width: 328px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.topWrapper {
+    position: relative;
+    width: 130px;
+    height: 20px;
+    margin: 0px auto 0 auto;
+    float: left;
+    left: 30%;
+    background-color: #000000;
+    border-radius: 0 0 45px 45px;
+}
+
+.line-rec {
+    position: relative;
+    width: 60px;
+    height: 6px;
+    margin: 0px auto 0 auto;
+    float: left;
+    left: 20%;
+    top: 4px;
+    background-color: rgb(83, 83, 82);
+    border-radius: 5px;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.camera {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    left: 18%;
+    width: 11px;
+    height: 11px;
+    top: 1px;
+    background-color: rgb(83, 83, 82);
+    border-radius: 30px;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.buttons {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 30px;
+    border-radius: 0 0 45px 45px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.phone .content {
+    opacity: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    height: calc(100% - 60px);
+    width: 100%;
+    transition: opacity 0.4s ease;
+}
+
+.phone .content.show {
+    opacity: 1;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: -5px;
+    width: 100%;
+}
+
+nav ul {
+    background-color: #fff;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    bottom: 5px;
+}
+
+nav li {
+    color: #777;
+    cursor: pointer;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li p {
+    font-size: 12px;
+    margin: 2px 0;
+}
+
+nav ul li:hover,
+nav ul li.active {
+    color: #f76b6b;
+}
